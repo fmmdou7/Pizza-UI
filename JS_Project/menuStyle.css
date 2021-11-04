@@ -1,0 +1,158 @@
+#menu{
+    background-image: url("./images/bg_4.jpg");
+    background-size: cover;
+    min-height: 1750px;
+}
+input,.btnDiv button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 3px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-weight: bolder;
+}
+input:hover{
+    
+    border: 1px solid #FAAC3B;
+}
+.btnDiv button:hover{
+    background-color: #FAAC3B;
+    color: #000;
+}
+.btnDiv{
+    clear: both;
+}
+.btnDiv button{
+    margin-top: 3em;
+    width: 200px;
+    margin-right: 20px;
+    font-size: large;
+    color: #faac3b;
+    height: 45px;
+    border: 1px solid #FAAC3B;
+    
+}
+.btnDiv button:first-child{
+    margin-left: 25em;
+}
+
+/* Popup form */
+#mainSec{
+    background-image: url('./images/bg_4.jpg');
+    padding: 30px;
+    width: 50%;
+    margin: 100px auto;
+    border-left: 15px solid #FAAC3B;
+    border-right: 15px solid #FAAC3B;
+}
+.main div {
+    width: 90%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    margin: 50px auto;
+    color: white;
+    font: large;
+}
+
+.main label {
+    flex-grow: 1;
+}
+
+.main div input {
+    flex-basis: 300px;
+}
+
+.main button{
+    flex-grow: .25;
+    margin-left: 3em;
+    font-size: larger;
+    background-color: transparent;
+    color: #FAAC3B;
+    border: 1px solid #FAAC3B;
+    border-radius: 5px;
+}
+
+.btns {
+    display: flex;
+    width: 50%;
+
+    margin: 0 auto;
+}
+
+input[type="submit"] {
+    color: #FAAC3B;
+    padding: 10px;
+    border: 2px solid #FAAC3B;
+    background-color: transparent;
+    font-size: 19px;
+    margin-left: 10px;
+    height: 50px;
+    flex-basis: 200px;
+}
+input[type="submit"]:hover, .main button:hover{
+    background-color: #FAAC3B;
+    color: black;
+}
+
+input[value="Add Item"]:active, .main button:active{
+    border-style: inset;
+    transform: scale(.95);
+}
+
+#bgCon{
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    background-color: green;
+    /* background-image: url('./images/bg_4.jpg');
+    background-size: cover; */
+    opacity: .5;
+    top: 0;
+    z-index: -5;
+}
+#mainSec h2{
+    color: white;
+}
+
+.main2 div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    margin: 10px auto;
+    color: white;
+    font: large;
+}
+.serveText h3:last-child{
+    flex-direction: column;
+}
+.serveText{
+    flex-grow: 3;
+}
+.serveImg{
+    flex-basis: 400px;
+    height: 300px;
+    justify-content: flex-end;
+    
+    animation: myAnimation;
+    animation-duration: 2s;
+    /* animation-delay: 1s; */
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes myAnimation {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+        transform: translateX(30px);
+        transform: rotate(180deg);
+        transform: scaleX(-1);
+    }
+}
